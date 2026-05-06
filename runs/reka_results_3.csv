@@ -1,0 +1,51 @@
+episode_index,video_id,outcome,verdict,raw_text,error
+0,c5b0a7bd-9ae5-421d-b56a-2d87032178e5,spilled,BAD,"OUTCOME: **spilled**
+- spilled: noticeable contents on table outside cup
+
+VERDICT: **BAD**
+",
+1,2c9a096b-4aad-448d-aff0-06a9ff8ff575,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD
+",
+2,a1c94a23-4979-4ece-8386-94cd9915663a,partial,BAD,"OUTCOME: partial
+- partial: most contents in cup, but visible items bounced out or scattered
+
+VERDICT: BAD
+",
+3,170eef4f-7535-4d03-b5cd-33081be8c089,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD
+- GOOD only if OUTCOME is ""clean""",
+4,df99d8f9-935f-484c-86a6-9a2b23e199ef,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD
+- GOOD only if OUTCOME is ""clean""
+",
+5,069b7630-5301-4124-a105-0bf50ef2af2d,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD",
+6,4e6f0116-0ee5-43be-9a13-e34361f2d656,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD",
+7,d7348120-9cbc-495c-b763-b307ea7defb4,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD
+- GOOD only if OUTCOME is ""clean""
+",
+8,f33060bd-45ed-4b01-a48e-382e60c5b203,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD",
+9,43818904-47b6-4ddf-be82-288ab1242564,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD
+- GOOD only if OUTCOME is ""clean""
+",

@@ -1,0 +1,67 @@
+episode_index,video_id,outcome,verdict,raw_text,error
+0,1cde0f98-bf21-4f69-b4f4-9e1283c5b73f,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD
+- GOOD only if OUTCOME is ""clean""",
+1,7a3e05a4-79d2-4293-8e23-75c326e2b8af,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD",
+2,c73f7e5c-7b95-46ca-8ac5-2a686ec377ae,spilled,BAD,"OUTCOME: **spilled**
+- clean: contents fully inside target cup, nothing on table
+- partial: most contents in cup, but visible items bounced out or scattered
+- **spilled**: noticeable contents on table outside cup
+- missed: contents poured but mostly outside the cup
+- knocked: target cup was tipped, moved, or fell during pour
+
+VERDICT: **BAD**
+- GOOD only if OUTCOME is ""clean""
+- **BAD** otherwise
+",
+3,e3eee3da-934e-4277-8394-b08dc6488b42,spilled,BAD,"OUTCOME: **spilled**
+- Noticeable contents are seen falling and scattering onto the table outside the cup during the process.
+
+VERDICT: **BAD**
+",
+4,39210dee-a090-4f0f-897b-0a434c8f0aa1,spilled,BAD,"OUTCOME: spilled
+- clean: contents fully inside target cup, nothing on table
+- partial: most contents in cup, but visible items bounced out or scattered
+- spilled: noticeable contents on table outside cup
+- missed: contents poured but mostly outside the cup
+- knocked: target cup was tipped, moved, or fell during pour
+
+VERDICT: BAD
+- GOOD only if OUTCOME is ""clean""
+- BAD otherwise
+",
+5,333b313d-6b99-44b0-90ce-04eb796bbb3a,i,BAD,"
+OUTCOME: I don't have enough information to answer that
+
+VERDICT: BAD",
+6,904de9b0-491d-4d42-8f8e-00480b4cd7ff,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD
+- GOOD only if OUTCOME is ""clean""
+",
+7,319e96fd-5ba3-4978-be6e-433322335d84,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD
+- GOOD only if OUTCOME is ""clean""
+",
+8,f14c768c-e558-4287-ab48-d838dc41a4fc,clean,GOOD,"OUTCOME: clean
+- clean: contents fully inside target cup, nothing on table
+
+VERDICT: GOOD
+- GOOD only if OUTCOME is ""clean""",
+9,65dbb20c-e823-417c-9d41-a76625f6a9c4,spilled,BAD,"OUTCOME: spilled
+- clean: contents fully inside target cup, nothing on table
+- partial: most contents in cup, but visible items bounced out or scattered
+- spilled: noticeable contents on table outside cup
+- missed: contents poured but mostly outside the cup
+- knocked: target cup was tipped, moved, or fell during pour
+
+VERDICT: BAD
+",
