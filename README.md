@@ -77,6 +77,25 @@ VERDICT: [GOOD | BAD]
 
 ## Reproducing
 
+1. Download `clips_10.zip` from this repo and unzip it (you'll get 10 `episode_NNNN.mp4` files)
+2. Get a Reka API key from [reka.ai](https://reka.ai) and add it to Colab Secrets as `REKA_API_KEY`
+3. Open `pipeline.ipynb` in Colab, upload the clips, run cells top to bottom
+
+The notebook handles uploading, indexing, querying, and scoring against the manual labels in `labels.csv`.
+
+## Notes
+
+This was a focused experiment, not a benchmark. Ten episodes is a small sample, so the accuracy numbers are best read as a sanity check rather than a statistical claim — what they show is that Reka Vision was clearly distinguishing successful pours from failed ones, with most of the wobble concentrated on borderline "partial" cases.
+
+The biggest surprise was the run-to-run variance. The same prompt against the same indexed videos gave different answers across the three runs, which is something worth knowing about if we need to build a curation pipeline that depends on consistent outputs.
+
+A few smaller things I'd want to revisit if I kept going:
+
+- The structured prompt asks for both an OUTCOME (clean / partial / spilled / etc.) and a binary VERDICT. Keeping both in the output makes human triage of flagged episodes much faster than a yes/no would.
+- Reka's reasoning text was generally well-aligned with its verdict, which is useful: when a flag is wrong, you can usually see why from the output.
+
+## Reproducing
+
 1. Get a Reka API key from [reka.ai](https://reka.ai) and add it to Colab Secrets as `REKA_API_KEY`
 2. Get a Hugging Face token (TOTO dataset is gated; accept the terms first)
 3. Open `pipeline.ipynb` in Colab, run cells top to bottom
