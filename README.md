@@ -94,24 +94,9 @@ A few smaller things I'd want to revisit if I kept going:
 - The structured prompt asks for both an OUTCOME (clean / partial / spilled / etc.) and a binary VERDICT. Keeping both in the output makes human triage of flagged episodes much faster than a yes/no would.
 - Reka's reasoning text was generally well-aligned with its verdict, which is useful: when a flag is wrong, you can usually see why from the output.
 
-## Reproducing
-
-1. Get a Reka API key from [reka.ai](https://reka.ai) and add it to Colab Secrets as `REKA_API_KEY`
-2. Get a Hugging Face token (TOTO dataset is gated; accept the terms first)
-3. Open `pipeline.ipynb` in Colab, run cells top to bottom
-
-The notebook handles slicing, uploading, indexing, querying, and scoring against your manual labels (see `labels.csv`).
-
-## Notes & caveats
-
-- N=10 is small. The accuracy numbers are illustrative, not statistical.
-- Run-to-run non-determinism comes from sampling in the underlying VLM — a temperature/seed parameter on `/qa/chat` would be useful here if exposed.
-- The five outcome categories collapse to a binary verdict; in a real curation pipeline, surfacing the OUTCOME alongside the VERDICT lets humans triage faster.
-- Indexing latency was ~25s per clip on average. For larger sweeps, parallel uploads with rate-limit-aware retries are essential.
-
 ## Files
 
 - `pipeline.ipynb` — full Colab notebook
 - `labels.csv` — manual ground-truth labels for the 10 sampled episodes
 - `runs/run_1.csv`, `run_2.csv`, `run_3.csv` — Reka outputs from the three runs
-- `clips.zip` — the 10 sliced MP4 clips used for evaluation
+- `clips_10.zip` — the 10 sliced MP4 clips used for evaluation
