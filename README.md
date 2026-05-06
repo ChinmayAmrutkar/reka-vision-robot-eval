@@ -51,7 +51,7 @@ Same 10 episodes, same prompt, three independent runs:
 5. Query `/qa/chat` with the structured prompt
 6. Parse `OUTCOME` and `VERDICT` from the response
 
-The full pipeline (including 429 retry, empty-response retry, markdown-tolerant parsing) is in [`pipeline.ipynb`](./pipeline.ipynb).
+The full pipeline (including 429 retry, empty-response retry, markdown-tolerant parsing) is in [`demo_pipeline.ipynb`](./demo_pipeline.ipynb).
 
 ## Prompt used
 
